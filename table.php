@@ -35,8 +35,8 @@ $conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), 
           foreach ($rows as $row) {
             echo "<tr>";
             echo "<td>{$row['name']}</td>";
-            echo "<td>{$row['DESCRIPTION']}</td>";
-            echo "<td>{$row['POPULATION']}</td>";
+            echo "<td>{$row['description']}</td>";
+            echo "<td>{$row['population']}</td>";
             echo "<td>";
             echo "<a href='./edit.php?id={$row['id']}'>edit</a>";
             echo " | ";
