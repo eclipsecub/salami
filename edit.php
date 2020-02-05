@@ -26,12 +26,12 @@ $conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), 
 
       <div>
         <label>Country Description:</label>
-        <textarea name="description"><?php echo $row['DESCRIPTION']; ?></textarea>
+        <textarea name="DESCRIPTION"><?php echo $row['DESCRIPTION']; ?></textarea>
       </div>
 
       <div>
         <label>Country Population:</label>
-        <input type="num" name="population" value="<?php echo $row['POPULATION']; ?>">
+        <input type="num" name="POPULATION" value="<?php echo $row['POPULATION']; ?>">
       </div>
 
       <button type="submit">Update</button>
